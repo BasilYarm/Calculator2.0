@@ -193,7 +193,7 @@ namespace Calculator2._0
 
                     Calculator.Menu();
 
-                    Console.Write("\nenter a number from 1 to 4: ");
+                    Console.Write("\nEnter a number from 1 to 4: ");
 
                     continue;
                 }
