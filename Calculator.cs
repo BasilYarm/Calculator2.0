@@ -3,22 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Configuration;
+using System.Collections.Specialized;
 
 namespace Calculator2._0
 {
     class Calculator
     {
         // Storing the first value.
-        static double firstValue;
+        static double firstValue = Convert.ToDouble(ConfigurationManager.AppSettings.Get("initialValuesOfVariables"));
 
         // Storing the second value.
-        static double secondValue;
+        static double secondValue = Convert.ToDouble(ConfigurationManager.AppSettings.Get("initialValuesOfVariables"));
 
         // Storing the result.
-        static double result;
+        static double result = Convert.ToDouble(ConfigurationManager.AppSettings.Get("initialValuesOfVariables"));
 
         // Operation sign storage. 
-        static char operation;
+        static char operation = Convert.ToChar(ConfigurationManager.AppSettings.Get("initialValueOfTheSignOfTheOperation"));
 
         // If the square root is being calculated, then only one value is needed.
         static int counterOper = 0;
